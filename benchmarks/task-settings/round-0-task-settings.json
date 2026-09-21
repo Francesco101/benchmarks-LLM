@@ -16,7 +16,7 @@
         "tasks": [
             "gsm8k"
         ],
-        "limit": false,
+        "limit": 100,
         "log_samples": true
     },
     "mmlu": {
@@ -35,7 +35,7 @@
         "tasks": [
             "mmlu"
         ],
-        "limit": false,
+        "limit": 10,
         "log_samples": true
     },
     "arc_challenge": {
@@ -54,7 +54,7 @@
         "tasks": [
             "arc_challenge"
         ],
-        "limit": false,
+        "limit": 100,
         "log_samples": true
     },
     "hellaswag": {
@@ -73,7 +73,7 @@
         "tasks": [
             "hellaswag"
         ],
-        "limit": false,
+        "limit": 100,
         "log_samples": true
     },
     "winogrande": {
@@ -92,7 +92,7 @@
         "tasks": [
             "winogrande"
         ],
-        "limit": false,
+        "limit": 100,
         "log_samples": true
     },
     "truthfulqa_mc2": {
@@ -111,7 +111,7 @@
         "tasks": [
             "truthfulqa_mc2"
         ],
-        "limit": false,
+        "limit": 100,
         "log_samples": true
     },
     "minerva_math": {
@@ -131,7 +131,7 @@
         "tasks": [
             "minerva_math"
         ],
-        "limit": false,
+        "limit": 25,
         "log_samples": true
     },
     "leaderboard_bbh": {
@@ -150,7 +150,7 @@
         "tasks": [
             "leaderboard_bbh"
         ],
-        "limit": false,
+        "limit": 20,
         "log_samples": true
     },
     "leaderboard_gpqa": {
@@ -170,7 +170,7 @@
         "tasks": [
             "leaderboard_gpqa"
         ],
-        "limit": false,
+        "limit": 100,
         "log_samples": true
     }
 }
