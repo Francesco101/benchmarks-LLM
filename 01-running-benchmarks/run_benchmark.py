@@ -2,18 +2,26 @@ import benchmarks_helper as bench   # Import the helper file
 import sys
 import json
 
-# usage: >> python test_execution benchmark-info.json "OUTPUT_PATH here" "results-filename (optional)"
+# usage: >> python run_benchmark benchmark-info.json "OUTPUT_PATH here" "results-filename (optional)"
+# example: 
+# .../01-running-benchmarks % >> python3.11 run_benchmark.py ../benchmarks/round-999-bench.json ../outputs/round-999-outp/ round-999-results
 
 # get benchmark instruction 
 benchmark_file = sys.argv[1]
 OUTPUT_PATH = sys.argv[2]
 
-if len(sys.argv) > 4:
+if len(sys.argv) > 3:
     RESULTS_FILENAME = sys.argv[3]
 else:
     RESULTS_FILENAME = "results"
 
+# TODO: For now i always log full outputs, this is to be changed
+#       It should be done only for tasks that have (log_samples = True)
 FULL_OUTPUT = True
+
+# TODO: Ensure bench-file and relative task-settings-file-path (contiained in bench-file) exist in the path indicated.
+#       Ensure that all the tasks in bench-file exist in its task settings-file (to avoid typos in task-ids for example)
+
 
 print(f"OUTPUT PATH : {OUTPUT_PATH}")
 print(f"RESULTS_FILENAME : {RESULTS_FILENAME}")
