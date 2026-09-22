@@ -1,0 +1,176 @@
+{
+    "gsm8k": {
+        "model": "local-chat-completions",
+        "model_args": {
+            "model": null,
+            "tokenizer": false,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/chat/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": 10000,
+            "temperature": 0.0,
+            "until": []
+        },
+        "apply_chat_template": true,
+        "tasks": [
+            "gsm8k"
+        ],
+        "limit": 100,
+        "log_samples": true
+    },
+    "mmlu": {
+        "model": "local-completions",
+        "model_args": {
+            "model": null,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": false,
+            "temperature": 0.0,
+            "until": false
+        },
+        "apply_chat_template": false,
+        "tasks": [
+            "mmlu"
+        ],
+        "limit": 10,
+        "log_samples": true
+    },
+    "arc_challenge": {
+        "model": "local-completions",
+        "model_args": {
+            "model": null,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": false,
+            "temperature": 0.0,
+            "until": false
+        },
+        "apply_chat_template": true,
+        "tasks": [
+            "arc_challenge"
+        ],
+        "limit": 100,
+        "log_samples": true
+    },
+    "hellaswag": {
+        "model": "local-completions",
+        "model_args": {
+            "model": null,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": false,
+            "temperature": 0.0,
+            "until": false
+        },
+        "apply_chat_template": false,
+        "tasks": [
+            "hellaswag"
+        ],
+        "limit": 100,
+        "log_samples": true
+    },
+    "winogrande": {
+        "model": "local-completions",
+        "model_args": {
+            "model": null,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": false,
+            "temperature": 0.0,
+            "until": false
+        },
+        "apply_chat_template": false,
+        "tasks": [
+            "winogrande"
+        ],
+        "limit": 100,
+        "log_samples": true
+    },
+    "truthfulqa_mc2": {
+        "model": "local-completions",
+        "model_args": {
+            "model": null,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": false,
+            "temperature": 0.0,
+            "until": false
+        },
+        "apply_chat_template": true,
+        "tasks": [
+            "truthfulqa_mc2"
+        ],
+        "limit": 100,
+        "log_samples": true
+    },
+    "minerva_math": {
+        "model": "local-chat-completions",
+        "model_args": {
+            "model": null,
+            "tokenizer": false,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/chat/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": 10000,
+            "temperature": 0.0,
+            "until": []
+        },
+        "apply_chat_template": true,
+        "tasks": [
+            "minerva_math"
+        ],
+        "limit": 25,
+        "log_samples": true
+    },
+    "leaderboard_bbh": {
+        "model": "local-completions",
+        "model_args": {
+            "model": null,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": 10000,
+            "temperature": 0.0,
+            "until": []
+        },
+        "apply_chat_template": false,
+        "tasks": [
+            "leaderboard_bbh"
+        ],
+        "limit": 20,
+        "log_samples": true
+    },
+    "leaderboard_gpqa": {
+        "model": "local-chat-completions",
+        "model_args": {
+            "model": null,
+            "tokenizer": false,
+            "base_url": "https://orfeo-llm.areasciencepark.it/vllm/v1/chat/completions",
+            "num_concurrent": 1
+        },
+        "gen_kwargs": {
+            "max_tokens": 10000,
+            "temperature": 0.0,
+            "until": []
+        },
+        "apply_chat_template": true,
+        "tasks": [
+            "leaderboard_gpqa"
+        ],
+        "limit": 100,
+        "log_samples": true
+    }
+}
