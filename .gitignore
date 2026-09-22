@@ -1,0 +1,21 @@
+git-ignored/
+01-running-benchmarks/__pycache__/
+
+# TUTORIAL :
+
+
+# verifica che una cartella file sia ignorato
+#git check-ignore -v git_ignored
+
+# Ignora un singolo file specifico
+#config.json
+#.env
+
+# Ignora un'intera cartella (nota lo slash / alla fine)
+#debug_qwen35B/
+#results/
+#.venv/
+
+# Ignora tutti i file con una determinata estensione
+#*.jsonl
+#*.log
